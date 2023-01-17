@@ -672,12 +672,14 @@ footer>div {
     transition-timing-function: var(--transition-function);
 }
 
-.icon-close:active {
+.icon-close:active,
+.icon-close:hover {
     background: #404BBF;
     border: 1px solid #404BBF;
 }
 
-.icon-close:active > svg {
+.icon-close:active,
+.icon-close:hover > svg {
     fill: #ffffff;
 }
 
@@ -872,6 +874,19 @@ footer>div {
 .section-filter {
     padding-top: 96px;
     padding-bottom: 120px;
+}
+
+.section-filter h1 {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .filter {
